@@ -49,6 +49,7 @@ object Versions {
     //Hilt
     const val daggerHiltCompiler = "2.52"
     const val hiltCompiler = "1.2.0"
+    const val navigationCompose = "2.4.0-alpha04"
 
     // Other dependencies
     const val material = "1.12.0"
@@ -116,4 +117,8 @@ object Versions {
 
     //chucker
     const val chucker = "4.0.0"
+
+    //coil
+    const val coil = "2.2.2"
+
 }

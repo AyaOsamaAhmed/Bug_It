@@ -47,6 +47,11 @@ object AppDependencies {
         add(daggerHilt)
     }
 
+    // Navigation Compose
+    const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigationCompose}"
+
+    //coil
+    const val  coil = "io.coil-kt:coil-compose:${Versions.coil}"
 }
 
 

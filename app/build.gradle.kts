@@ -44,6 +44,8 @@ android {
 
 dependencies {
 
+    implementation(project(mapOf("path" to ":data")))
+    implementation(project(mapOf("path" to ":domain")))
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -64,5 +66,9 @@ dependencies {
 
     ksp(AppDependencies.daggerHiltCompiler)
     ksp(AppDependencies.hiltCompiler)
+
+
+    implementation(AppDependencies.navigationCompose)
+    implementation(AppDependencies.coil)
 
 }
