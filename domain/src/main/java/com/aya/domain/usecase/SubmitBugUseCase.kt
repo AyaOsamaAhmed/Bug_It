@@ -1,7 +1,7 @@
-package com.example.domain.usecase
+package com.aya.domain.usecase
 
-import com.example.domain.model.Bug
-import com.example.domain.repository.BugRepository
+import com.aya.domain.model.Bug
+import com.aya.domain.repository.BugRepository
 import javax.inject.Inject
 
 class SubmitBugUseCase @Inject constructor(

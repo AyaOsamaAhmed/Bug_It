@@ -1,6 +1,5 @@
 package com.aya.data.repository
 
-import android.net.Uri
 import com.aya.data.datasource.GoogleSheetsApi
 import com.aya.domain.datasource.FirebaseStorageApi
 import com.aya.domain.model.Bug
@@ -18,9 +17,5 @@ class BugRepositoryImpl @Inject constructor(
 
     override suspend fun getBugs(): List<Bug> {
         return googleSheetsApi.fetchBugs()
-    }
-
-    override suspend fun uploadImage(imageUri: Uri): String {
-        return firebaseStorageApi.uploadImage(imageUri)
     }
 }
